@@ -1,0 +1,17 @@
+.myError {
+  text-align: center;
+  color: red;
+}
+
+.myErrorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.myErrorMessage {
+  text-align: center;
+  color: gray;
+  font-weight: 300;
+}

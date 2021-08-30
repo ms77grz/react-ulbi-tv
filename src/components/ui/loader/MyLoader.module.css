@@ -1,0 +1,22 @@
+.myLoader {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 3px dashed teal;
+  animation: rotate 2s infinite linear;
+}
+
+.myLoaderContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) scale(0.5);
+  }
+  to {
+    transform: rotate(360deg) scale(1.5);
+  }
+}
