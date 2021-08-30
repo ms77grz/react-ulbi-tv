@@ -1,0 +1,16 @@
+.myPagination {
+  padding: 10px;
+  border: 1px solid teal;
+  cursor: pointer;
+}
+
+.myPaginationContainer {
+  margin-top: 30px;
+  display: flex;
+}
+
+.myPagination.active {
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+}
