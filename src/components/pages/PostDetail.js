@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { useFetch } from '../hooks/useFetch';
-import PostService from '../api/PostsService';
-import MyLoader from './ui/loader/MyLoader';
+import { useFetch } from '../../hooks/useFetch';
+import PostService from '../../api/PostsService';
+import MyLoader from '../ui/loader/MyLoader';
 
 export default function PostDetail() {
   const params = useParams();
@@ -42,7 +42,7 @@ export default function PostDetail() {
       ) : (
         <div>
           {comments.map(comment => (
-            <div style={{ marginTop: 15 }}>
+            <div key={comment.id} style={{ marginTop: 15 }}>
               <h5>{comment.email}</h5>
               <div>{comment.body}</div>
             </div>

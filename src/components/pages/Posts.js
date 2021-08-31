@@ -64,7 +64,14 @@ export default function Posts() {
       <MyModal visible={modal} setVisible={setModal}>
         <PostForm addPost={addPost} />
       </MyModal>
-      <hr style={{ margin: '15px 0' }} />
+      <div
+        style={{
+          width: '100%',
+          border: '1px solid teal',
+          marginTop: 15,
+          marginBottom: 15,
+        }}
+      />
       <PostFilter filter={filter} setFilter={setFilter} />
       {postError && <MyError error={postError} />}
       {isPostsLoading && <MyLoader />}
@@ -79,6 +86,14 @@ export default function Posts() {
         totalPages={totalPages}
         page={page}
         changePage={changePage}
+      />
+      <div
+        style={{
+          width: '100%',
+          border: '1px solid teal',
+          marginTop: 15,
+          marginBottom: 15,
+        }}
       />
     </div>
   );
